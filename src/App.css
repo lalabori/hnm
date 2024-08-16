@@ -1,0 +1,49 @@
+.login-button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+}
+
+.nav-section {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-list {
+  display: flex;
+  list-style-type: none;
+  position: relative;
+  right: 1em;
+}
+
+.menu-list li {
+  padding: 0.5em;
+}
+
+.menu-area {
+  display: flex;
+  justify-content: center;
+}
+
+.search-area {
+  position: absolute;
+  right: 2em;
+  padding: 5px;
+  border-bottom: 1px solid black;
+  margin-top: 1em;
+}
+
+.search-area input{
+  border:none;
+  margin-left:5px;
+  width: 8em;
+}
+
+.search-area input:focus {
+  outline:none
+}
+
+.search-icon {
+  font-size: 18px;
+  color: black;
+}
