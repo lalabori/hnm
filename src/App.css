@@ -2,6 +2,7 @@
   display: flex;
   justify-content: flex-end;
   margin: 20px;
+  cursor: pointer;
 }
 
 .nav-section {
@@ -27,10 +28,9 @@
 
 .search-area {
   position: absolute;
-  right: 2em;
+  right: 9em;
   padding: 5px;
   border-bottom: 1px solid black;
-  margin-top: 1em;
 }
 
 .search-area input{
@@ -43,7 +43,22 @@
   outline:none
 }
 
+
 .search-icon {
   font-size: 18px;
   color: black;
+}
+
+.img-size {
+  width: 280px;
+}
+
+.card {
+  border: none !important;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  z-index: 1;
 }
