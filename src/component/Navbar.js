@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import ReactDOM from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
@@ -21,6 +21,14 @@ const Navbar = () => {
 
   const goToLogin=() => {
     navigate('/login');
+  }
+
+  const search =(event) => {
+    if(event.key === "Enter"){
+      let keyword = event.target.value;
+  
+      navigate(`/?q=${keyword}`)
+    }
   }
 
   return (
@@ -48,7 +56,7 @@ const Navbar = () => {
         <div className="search-container">
           <div className="search-area">
             <FontAwesomeIcon className="search-icon" icon={faSearch} />
-            <input class="search-style" type="text" placeholder="검색" />
+            <input class="search-style" type="text" placeholder="검색" onKeyDown={(event)=>search(event)}/>
           </div>
         </div>
       </div>
